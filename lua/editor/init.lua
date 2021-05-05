@@ -12,7 +12,7 @@ vim.cmd([[
     set expandtab]]
     )
 
-vim.cmd('set t_Co=256')
+-- vim.cmd('set t_Co=256')
 
 vim.o.showcmd = true			-- display incomplete commands
 vim.o.number = true             -- show line numbers
@@ -24,7 +24,9 @@ vim.o.ignorecase = true			-- ignore case when searching
 vim.o.smartcase = true			-- no ignorecase if Uppercase char present
 vim.o.mouse = 'a'               -- enable the mouse
 
-vim.o.t_Co="256"
 
-vim.cmd('colo badwolf')
--- vim.o.termguicolors = true -- not sure about this
+vim.cmd('let g:monokai_term_italic = 0')
+vim.cmd('let g:monokai_gui_italic = 0')
+vim.cmd('colo monokai_pro')
+vim.cmd('set termguicolors')
+--vim.o.termguicolors = true -- not sure about this

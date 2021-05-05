@@ -26,7 +26,8 @@ local plug = {
     'sjl/badwolf',
     'nanotech/jellybeans.vim',
     'ayu-theme/ayu-vim',
-    'gdetrez/vim-gf'
+    'gdetrez/vim-gf',
+    'sickill/vim-monokai',
 }
 
 
