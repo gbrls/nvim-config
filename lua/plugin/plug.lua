@@ -28,6 +28,8 @@ local plug = {
     'ayu-theme/ayu-vim',
     'gdetrez/vim-gf',
     'sickill/vim-monokai',
+
+    'dstein64/vim-startuptime',
 }
 
 
