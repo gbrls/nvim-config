@@ -28,11 +28,15 @@ vim.o.mouse = 'a'               -- enable the mouse
 
 vim.cmd('let g:monokai_term_italic = 0')
 vim.cmd('let g:monokai_gui_italic = 0')
-vim.cmd('colo monokai_pro')
--- vim.cmd('colo monokai')
+-- vim.cmd('colo monokai_pro')
+-- vim.cmd('colo default')
+vim.cmd('colo ayu')
 vim.cmd('set termguicolors')
 vim.cmd('set clipboard+=unnamedplus')
 --vim.o.termguicolors = true -- not sure about this
 
-vim.cmd('set timeoutlen=20')
+vim.cmd('set timeoutlen=200')
 vim.cmd('set ttimeoutlen=5')
+vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+
+vim.cmd('let g:airline_powerline_fonts = 1')
