@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 require('plugin') 
 require('plugin.treesitter') -- you have to configure it from toplevel
 require('editor') -- basic vim settings

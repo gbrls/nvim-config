@@ -40,3 +40,11 @@ vim.cmd('set ttimeoutlen=5')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 
 vim.cmd('let g:airline_powerline_fonts = 1')
+
+-- Remap keys for gotos
+vim.cmd('nmap <silent> gd <Plug>(coc-definition)')
+vim.cmd('nmap <silent> gy <Plug>(coc-type-definition)')
+vim.cmd('nmap <silent> gi <Plug>(coc-implementation)')
+vim.cmd('nmap <silent> gr <Plug>(coc-references)')
+
+vim.cmd('nnoremap <silent> <leader> :WhichKey \'<Space>\'<CR>')

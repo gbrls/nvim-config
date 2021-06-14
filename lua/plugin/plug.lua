@@ -8,7 +8,6 @@ local plug = {
     {'nvim-treesitter/nvim-treesitter', '{\'do\': \':TSUpdate\'}'},
     -- LSP  Support
     {'neoclide/coc.nvim', '{\'branch\': \'release\'}'},
-    
     'tpope/vim-surround', -- Surround, basic commands like ds( or ysiw]
     'junegunn/goyo.vim',  -- Zen-mode
 
@@ -30,6 +29,8 @@ local plug = {
     'sickill/vim-monokai',
 
     'dstein64/vim-startuptime',
+
+    -- 'liuchengxu/vim-which-key'
 }
 
 
