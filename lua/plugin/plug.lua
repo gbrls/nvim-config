@@ -30,7 +30,7 @@ local plug = {
 
     'dstein64/vim-startuptime',
 
-    -- 'liuchengxu/vim-which-key'
+    'liuchengxu/vim-which-key'
 }
 
 
