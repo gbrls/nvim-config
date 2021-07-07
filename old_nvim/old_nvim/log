@@ -1,0 +1,191 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.011  000.011: --- NVIM STARTING ---
+000.730  000.719: locale set
+001.347  000.617: inits 1
+001.379  000.032: window checked
+001.529  000.150: parsing arguments
+001.710  000.181: expanding arguments
+001.766  000.056: inits 2
+003.120  001.353: init highlight
+003.127  000.007: waiting for UI
+005.177  002.050: done waiting for UI
+005.241  000.064: initialized screen early for UI
+012.983  003.714  003.714: sourcing /home/gabriel/.local/share/nvim/site/autoload/plug.vim
+040.955  000.050  000.050: sourcing /home/gabriel/.config/nvim/plugged/nvim-treesitter/ftdetect/query.vim
+041.102  000.019  000.019: sourcing /home/gabriel/.config/nvim/plugged/vim-fugitive/ftdetect/fugitive.vim
+045.410  000.056  000.056: sourcing /home/gabriel/.config/nvim/plugged/vim-gf/ftdetect/gf.vim
+046.184  017.817  017.693: sourcing /opt/nvim-linux64/share/nvim/runtime/filetype.vim
+047.042  000.068  000.068: sourcing /opt/nvim-linux64/share/nvim/runtime/ftplugin.vim
+047.413  000.086  000.086: sourcing /opt/nvim-linux64/share/nvim/runtime/indent.vim
+048.880  000.991  000.991: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+049.565  001.793  000.803: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/synload.vim
+049.730  002.078  000.285: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syntax.vim
+063.231  000.176  000.176: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+064.621  000.460  000.460: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+065.835  000.166  000.166: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+067.506  004.651  003.849: sourcing /home/gabriel/.config/nvim/plugged/vim-monokai-pro/colors/monokai_pro.vim
+067.874  034.218: sourcing vimrc file(s)
+069.529  001.408  001.408: sourcing /home/gabriel/.config/nvim/plugged/fzf/plugin/fzf.vim
+071.709  002.057  002.057: sourcing /home/gabriel/.config/nvim/plugged/fzf.vim/plugin/fzf.vim
+074.044  002.159  002.159: sourcing /home/gabriel/.config/nvim/plugged/nvim-treesitter/plugin/nvim-treesitter.vim
+074.837  000.681  000.681: sourcing /home/gabriel/.config/nvim/plugged/vim-surround/plugin/surround.vim
+074.980  000.026  000.026: sourcing /home/gabriel/.config/nvim/plugged/goyo.vim/plugin/goyo.vim
+077.211  002.171  002.171: sourcing /home/gabriel/.config/nvim/plugged/vim-fugitive/plugin/fugitive.vim
+078.480  000.141  000.141: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/init.vim
+078.911  000.089  000.089: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/parts.vim
+079.129  000.016  000.016: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/formatter/short_path.vim
+080.615  000.171  000.171: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/util.vim
+080.726  003.296  002.880: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/plugin/airline.vim
+080.856  000.040  000.040: sourcing /home/gabriel/.config/nvim/plugged/vim-airline-themes/plugin/airline-themes.vim
+081.701  000.508  000.508: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/gzip.vim
+081.751  000.014  000.014: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/health.vim
+081.924  000.148  000.148: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/man.vim
+082.665  000.288  000.288: sourcing /opt/nvim-linux64/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+082.768  000.817  000.529: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/matchit.vim
+083.278  000.473  000.473: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/matchparen.vim
+084.497  001.111  001.111: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/netrwPlugin.vim
+084.722  000.169  000.169: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/rplugin.vim
+084.993  000.222  000.222: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/shada.vim
+085.062  000.028  000.028: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/spellfile.vim
+085.294  000.203  000.203: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/tarPlugin.vim
+085.777  000.280  000.280: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/tohtml.vim
+086.122  000.116  000.116: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/tutor.vim
+087.261  001.010  001.010: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/zipPlugin.vim
+087.351  002.541: loading plugins
+087.958  000.607: loading packages
+088.173  000.215: loading after plugins
+088.200  000.027: inits 3
+093.057  004.856: reading ShaDa
+098.211  000.172  000.172: sourcing /opt/nvim-linux64/share/nvim/runtime/ftplugin/lua.vim
+101.827  000.070  000.070: sourcing /opt/nvim-linux64/share/nvim/runtime/indent/lua.vim
+103.499  001.230  001.230: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/lua.vim
+117.815  000.533  000.533: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions.vim
+117.989  000.058  000.058: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/quickfix.vim
+118.232  000.171  000.171: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline.vim
+118.455  000.036  000.036: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/netrw.vim
+118.598  000.036  000.036: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/fzf.vim
+119.202  000.067  000.067: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/section.vim
+119.694  000.229  000.229: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/highlighter.vim
+120.924  001.943  001.648: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/term.vim
+122.830  001.623  001.623: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/branch.vim
+123.117  000.063  000.063: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/fugitiveline.vim
+134.248  000.132  000.132: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/nvimlsp.vim
+134.938  000.261  000.261: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/whitespace.vim
+139.061  000.116  000.116: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/wordcount.vim
+139.321  000.056  000.056: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/keymap.vim
+155.152  000.060  000.060: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/themes.vim
+155.568  000.587  000.527: sourcing /home/gabriel/.config/nvim/plugged/vim-airline-themes/autoload/airline/themes/molokai.vim
+184.196  000.317  000.317: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/builder.vim
+184.758  000.098  000.098: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/default.vim
+279.450  178.891: opening buffers
+279.478  000.028: BufEnter autocommands
+279.481  000.004: editing files in windows
+279.678  000.197: VimEnter autocommands
+279.682  000.004: UIEnter autocommands
+295.032  015.204  015.204: sourcing /opt/nvim-linux64/share/nvim/runtime/autoload/provider/clipboard.vim
+295.057  000.171: before starting main loop
+324.645  008.714  008.714: sourcing /home/gabriel/.config/nvim/plugged/vim-fugitive/autoload/fugitive.vim
+325.921  000.489  000.489: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/async.vim
+334.987  030.727: first screen update
+334.994  000.007: --- NVIM STARTED ---
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.013  000.013: --- NVIM STARTING ---
+000.686  000.674: locale set
+001.194  000.507: inits 1
+001.282  000.088: window checked
+001.379  000.097: parsing arguments
+001.846  000.467: expanding arguments
+001.935  000.089: inits 2
+002.999  001.065: init highlight
+003.004  000.005: waiting for UI
+004.402  001.398: done waiting for UI
+004.516  000.114: initialized screen early for UI
+010.452  003.418  003.418: sourcing /home/gabriel/.local/share/nvim/site/autoload/plug.vim
+029.991  000.034  000.034: sourcing /home/gabriel/.config/nvim/plugged/nvim-treesitter/ftdetect/query.vim
+030.163  000.016  000.016: sourcing /home/gabriel/.config/nvim/plugged/vim-fugitive/ftdetect/fugitive.vim
+030.281  000.013  000.013: sourcing /home/gabriel/.config/nvim/plugged/vim-gf/ftdetect/gf.vim
+030.533  012.213  012.151: sourcing /opt/nvim-linux64/share/nvim/runtime/filetype.vim
+030.803  000.036  000.036: sourcing /opt/nvim-linux64/share/nvim/runtime/ftplugin.vim
+031.057  000.031  000.031: sourcing /opt/nvim-linux64/share/nvim/runtime/indent.vim
+032.013  000.459  000.459: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+034.872  003.455  002.997: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/synload.vim
+035.228  003.926  000.470: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syntax.vim
+044.646  000.327  000.327: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+045.863  000.181  000.181: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+046.644  000.151  000.151: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/syncolor.vim
+048.047  004.244  003.585: sourcing /home/gabriel/.config/nvim/plugged/vim-monokai-pro/colors/monokai_pro.vim
+050.781  022.396: sourcing vimrc file(s)
+054.049  002.192  002.192: sourcing /home/gabriel/.config/nvim/plugged/fzf/plugin/fzf.vim
+056.659  001.632  001.632: sourcing /home/gabriel/.config/nvim/plugged/fzf.vim/plugin/fzf.vim
+058.609  001.846  001.846: sourcing /home/gabriel/.config/nvim/plugged/nvim-treesitter/plugin/nvim-treesitter.vim
+059.310  000.588  000.588: sourcing /home/gabriel/.config/nvim/plugged/vim-surround/plugin/surround.vim
+059.500  000.027  000.027: sourcing /home/gabriel/.config/nvim/plugged/goyo.vim/plugin/goyo.vim
+061.377  001.816  001.816: sourcing /home/gabriel/.config/nvim/plugged/vim-fugitive/plugin/fugitive.vim
+061.831  000.105  000.105: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/init.vim
+062.311  000.095  000.095: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/parts.vim
+062.530  000.016  000.016: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/formatter/short_path.vim
+064.233  000.228  000.228: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/util.vim
+064.344  002.886  002.442: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/plugin/airline.vim
+064.494  000.059  000.059: sourcing /home/gabriel/.config/nvim/plugged/vim-airline-themes/plugin/airline-themes.vim
+065.007  000.321  000.321: sourcing /home/gabriel/.config/nvim/plugged/vim-startuptime/plugin/startuptime.vim
+066.143  000.639  000.639: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/gzip.vim
+066.275  000.028  000.028: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/health.vim
+066.715  000.401  000.401: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/man.vim
+067.523  000.292  000.292: sourcing /opt/nvim-linux64/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+067.576  000.808  000.516: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/matchit.vim
+067.775  000.175  000.175: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/matchparen.vim
+068.890  001.084  001.084: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/netrwPlugin.vim
+069.251  000.223  000.223: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/rplugin.vim
+069.523  000.234  000.234: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/shada.vim
+069.588  000.029  000.029: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/spellfile.vim
+069.883  000.235  000.235: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/tarPlugin.vim
+070.017  000.102  000.102: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/tohtml.vim
+070.073  000.025  000.025: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/tutor.vim
+070.480  000.265  000.265: sourcing /opt/nvim-linux64/share/nvim/runtime/plugin/zipPlugin.vim
+070.506  004.112: loading plugins
+070.640  000.134: loading packages
+070.748  000.107: loading after plugins
+070.762  000.014: inits 3
+074.659  003.897: reading ShaDa
+078.187  000.189  000.189: sourcing /opt/nvim-linux64/share/nvim/runtime/ftplugin/lua.vim
+079.914  000.062  000.062: sourcing /opt/nvim-linux64/share/nvim/runtime/indent/lua.vim
+082.036  001.482  001.482: sourcing /opt/nvim-linux64/share/nvim/runtime/syntax/lua.vim
+096.145  000.365  000.365: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions.vim
+096.317  000.054  000.054: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/quickfix.vim
+096.556  000.169  000.169: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline.vim
+096.716  000.034  000.034: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/netrw.vim
+096.850  000.035  000.035: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/fzf.vim
+097.564  000.067  000.067: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/section.vim
+098.026  000.211  000.211: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/highlighter.vim
+098.504  001.207  000.930: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/term.vim
+099.335  000.382  000.382: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/branch.vim
+099.807  000.133  000.133: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/fugitiveline.vim
+112.471  000.312  000.312: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/nvimlsp.vim
+113.148  000.267  000.267: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/whitespace.vim
+119.645  000.241  000.241: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/wordcount.vim
+120.061  000.046  000.046: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/keymap.vim
+137.136  000.062  000.062: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/themes.vim
+137.556  000.582  000.520: sourcing /home/gabriel/.config/nvim/plugged/vim-airline-themes/autoload/airline/themes/molokai.vim
+170.739  000.168  000.168: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/builder.vim
+171.186  000.086  000.086: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/extensions/default.vim
+251.646  171.176: opening buffers
+251.675  000.029: BufEnter autocommands
+251.678  000.003: editing files in windows
+251.835  000.157: VimEnter autocommands
+251.839  000.004: UIEnter autocommands
+267.455  015.453  015.453: sourcing /opt/nvim-linux64/share/nvim/runtime/autoload/provider/clipboard.vim
+267.477  000.185: before starting main loop
+302.692  007.058  007.058: sourcing /home/gabriel/.config/nvim/plugged/vim-fugitive/autoload/fugitive.vim
+303.960  000.465  000.465: sourcing /home/gabriel/.config/nvim/plugged/vim-airline/autoload/airline/async.vim
+311.755  036.755: first screen update
+311.780  000.026: --- NVIM STARTED ---
