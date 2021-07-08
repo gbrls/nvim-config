@@ -63,10 +63,8 @@ require('packer').startup(function()
            require("trouble").setup { }
           end
   }
-
    use 'ARM9/arm-syntax-vim'
-    
-
+   use 'nvim-treesitter/nvim-treesitter'
 end)
 
 -- Mine
@@ -166,12 +164,17 @@ end
 vim.api.nvim_set_keymap('n', '<F10>', '<cmd>lua ToggleMouse()<cr>', { noremap = true })
 
 -- Telescope
+local trouble = require('trouble.providers.telescope')
 require('telescope').setup {
   defaults = {
     mappings = {
       i = {
         ["<C-u>"] = false,
         ["<C-d>"] = false,
+        ["<C-t>"] = trouble.open_with_trouble,
+      },
+      n = {
+        ["<C-t>"] = trouble.open_with_trouble,
       },
     },
     -- generic_sorter =  require'telescope.sorters'.get_fzy_sorter,
@@ -439,3 +442,11 @@ vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ignore_install = { "javascript" }, -- List of parsers to ignore installing
+  highlight = {
+    enable = { "c", "rust" },  -- list of language that will be disabled
+  },
+}
