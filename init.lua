@@ -29,7 +29,7 @@ require('packer').startup(function()
   use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
   use 'joshdick/onedark.vim'         -- Theme inspired by Atom
   use 'folke/tokyonight.nvim'
-  use 'itchyny/lightline.vim'        -- Fancier statusline
+  --use 'itchyny/lightline.vim'        -- Fancier statusline
   -- Add indentation guides even on blank lines
   use { 'lukas-reineke/indent-blankline.nvim' }
   -- Add git related info in the signs columns and popups
@@ -57,14 +57,35 @@ require('packer').startup(function()
 
    use 'simrat39/rust-tools.nvim'
    use {
-       "folke/trouble.nvim",
-       requires = "kyazdani42/nvim-web-devicons",
+       'folke/trouble.nvim',
+       requires = 'kyazdani42/nvim-web-devicons',
        config = function()
-           require("trouble").setup { }
+           require('trouble').setup { }
           end
   }
    use 'ARM9/arm-syntax-vim'
    use 'nvim-treesitter/nvim-treesitter'
+   use {
+       'folke/zen-mode.nvim',
+       config = function()
+           require('zen-mode').setup { }
+       end
+   }
+
+   use {
+       'folke/twilight.nvim',
+       config = function()
+           require('twilight').setup { }
+       end
+   }
+
+   use {
+       'hoob3rt/lualine.nvim',
+       requires = {'kyazdani42/nvim-web-devicons', opt = true}
+   }
+   use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
+   use 'ggandor/lightspeed.nvim'
+
 end)
 
 -- Mine
@@ -118,10 +139,10 @@ vim.g.tokyonight_style = "night"
 vim.cmd[[colorscheme onedark]]
 
 --Set statusbar
-vim.g.lightline = { colorscheme = 'onedark';
-      active = { left = { { 'mode', 'paste' }, { 'gitbranch', 'readonly', 'filename', 'modified' } } };
-      component_function = { gitbranch = 'fugitive#head', };
-}
+--vim.g.lightline = { colorscheme = 'onedark';
+--      active = { left = { { 'mode', 'paste' }, { 'gitbranch', 'readonly', 'filename', 'modified' } } };
+--      component_function = { gitbranch = 'fugitive#head', };
+--}
 
 --Remap space as leader key
 vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true, silent=true})
@@ -220,14 +241,21 @@ wk.register({
     l = {
         name = "lsp",
         a = {[[<cmd>lua require('telescope.builtin').lsp_code_actions()<cr>]],  'Actions',  noremap = true, silent = true},
+        f = {[[<cmd>Format<cr>]],  'Format',  noremap = true, silent = true},
         t = {[[<cmd>TroubleToggle<cr>]],  'Trouble Toggle',  noremap = true, silent = true},
         r = {[[<cmd>TroubleToggle lsp_references<cr>]],  'References',  noremap = true, silent = true},
     },
+    c = {
+        name = "Commands",
+        h = {[[<cmd>lua require('telescope.builtin').command_history()<cr>]],  'History',  noremap = true, silent = true},
+    },
+    -- @TODO: Write here multiple pickers, similar to Jetbrains's Shift-Shift
+    ['<leader>'] = {[[<cmd>lua require('telescope.builtin').commands()<cr>]],  'All commands',  noremap = true, silent = true},
 }, { prefix = '<leader>' })
 
 -- vim.api.nvim_set_keymap('n', '<leader>f', [[<cmd>lua require('telescope.builtin').find_files()<cr>]], { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<leader><space>', [[<cmd>lua require('telescope.builtin').buffers()<cr>]], { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<leader>l', [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>]], { noremap = true, silent = true})
+--vim.api.nvim_set_keymap('n', '<leader><space>', [[<cmd>lua require('telescope.builtin').buffers()<cr>]], { noremap = true, silent = true})
+--vim.api.nvim_set_keymap('n', '<leader>l', [[<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>]], { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>t', [[<cmd>lua require('telescope.builtin').tags()<cr>]], { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>?', [[<cmd>lua require('telescope.builtin').oldfiles()<cr>]], { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>sd', [[<cmd>lua require('telescope.builtin').grep_string()<cr>]], { noremap = true, silent = true})
@@ -450,3 +478,10 @@ require'nvim-treesitter.configs'.setup {
     enable = { "c", "rust" },  -- list of language that will be disabled
   },
 }
+
+require'lualine'.setup {
+    options = { theme = 'onedark' },
+    extensions = {'fugitive', 'nvim-tree'},
+}
+-- It doesn't work well with nvim-qt on windows 
+-- require'bufferline'.setup{ }

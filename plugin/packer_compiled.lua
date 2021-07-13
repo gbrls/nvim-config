@@ -7,7 +7,7 @@ end
 
 vim.api.nvim_command('packadd packer.nvim')
 
-local no_errors = pcall(function()
+local no_errors, error_msg = pcall(function()
 
   local time
   local profile_info
@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/gabalmei/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/gabalmei/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/gabalmei/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/gabalmei/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/gabalmei/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "C:\\Users\\gabri\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\gabri\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\gabri\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\gabri\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\gabri\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,118 +71,136 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["arm-syntax-vim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/arm-syntax-vim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\arm-syntax-vim"
   },
   ["dashboard-nvim"] = {
     config = { "\27LJ\2\nR\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0003let g:dashboard_default_executive ='telescope'\bcmd\bvim\0" },
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim"
   },
   fzf = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/fzf"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf"
   },
   ["fzf.vim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/fzf.vim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf.vim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim"
   },
-  ["lightline.vim"] = {
+  ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/lightline.vim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim"
+  },
+  ["nvim-bufferline.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-bufferline.lua"
   },
   ["nvim-compe"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/onedark.vim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim"
   },
   ["rust-tools.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/rust-tools.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim"
   },
   ["trouble.nvim"] = {
     config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/trouble.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\trouble.nvim"
+  },
+  ["twilight.nvim"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rtwilight\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\twilight.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/vim-commentary"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive"
   },
   ["vim-rhubarb"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-rhubarb"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/vim-surround"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0" },
     loaded = true,
-    path = "/home/gabalmei/.local/share/nvim/site/pack/packer/start/which-key.nvim"
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim"
+  },
+  ["zen-mode.nvim"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\gabri\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: dashboard-nvim
-time([[Config for dashboard-nvim]], true)
-try_loadstring("\27LJ\2\nR\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0003let g:dashboard_default_executive ='telescope'\bcmd\bvim\0", "config", "dashboard-nvim")
-time([[Config for dashboard-nvim]], false)
+-- Config for: zen-mode.nvim
+time([[Config for zen-mode.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
+time([[Config for zen-mode.nvim]], false)
+-- Config for: twilight.nvim
+time([[Config for twilight.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rtwilight\frequire\0", "config", "twilight.nvim")
+time([[Config for twilight.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
@@ -191,10 +209,14 @@ time([[Config for trouble.nvim]], false)
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
+-- Config for: dashboard-nvim
+time([[Config for dashboard-nvim]], true)
+try_loadstring("\27LJ\2\nR\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0003let g:dashboard_default_executive ='telescope'\bcmd\bvim\0", "config", "dashboard-nvim")
+time([[Config for dashboard-nvim]], false)
 if should_profile then save_profiles() end
 
 end)
 
 if not no_errors then
-  vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: ".v:exception | echom "Please check your config for correctness" | echohl None')
+  vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end
